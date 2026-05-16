@@ -500,7 +500,9 @@ body {
     user-select: none;
 }
 
-.store-btn img {
+.store-btn img,
+.server-card,
+.server-card * {
     -webkit-touch-callout: none;
     -webkit-user-drag: none;
     user-drag: none;

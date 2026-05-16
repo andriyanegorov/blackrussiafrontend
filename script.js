@@ -61,10 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    document.querySelectorAll('.store-btn, .server-card').forEach((link) => {
-        link.addEventListener('contextmenu', (event) => {
+    document.addEventListener('contextmenu', (event) => {
+        if (event.target.closest('a')) {
             event.preventDefault();
-        });
+        }
     });
 
     const adminProgressBlock = document.getElementById("adminProgressBlock");
